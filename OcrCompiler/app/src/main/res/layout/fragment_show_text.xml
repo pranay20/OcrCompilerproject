@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ocrcomp.myapp.ocrcompiler.ShowText"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:id="@+id/sv_st"
+
+        >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Code for running"
+        android:id="@+id/et_finalcode"
+        android:textSize="20sp"/>
+
+    </ScrollView>
+
+    <Button
+        android:text="Run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_str"
+        android:layout_below="@+id/sv_st"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+</RelativeLayout>
